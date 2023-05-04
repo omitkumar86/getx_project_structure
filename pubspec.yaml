@@ -41,6 +41,7 @@ dependencies:
   google_fonts: ^4.0.4
   flutter_screenutil: ^5.7.0
   dio: ^5.1.1
+  internet_connection_checker: ^1.0.0+1
 
 dev_dependencies:
   flutter_test:
@@ -52,6 +53,8 @@ dev_dependencies:
   # package. See that file for information about deactivating specific lint
   # rules and activating additional ones.
   flutter_lints: ^2.0.0
+
+  # flutter build apk --split-per-abi
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec

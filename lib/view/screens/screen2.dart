@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:getx_project_structure/view/screens/screen2.dart';
+import 'package:get/get_core/src/get_main.dart';
+import 'package:getx_project_structure/view/screens/home_page.dart';
 
-class HomePage extends StatelessWidget {
-  const HomePage({Key? key}) : super(key: key);
+class Screen2 extends StatelessWidget {
+  const Screen2({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -14,11 +15,10 @@ class HomePage extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             MaterialButton(onPressed: (){
-              Get.to(Screen2(),
-              transition: Transition.zoom);
+              Get.back(result: HomePage());
             },
               color: Colors.blue,
-            child: Text("Next"),),
+            child: Text("Back"),),
           ],
         ),
       ),
